@@ -4,7 +4,9 @@ function interactuar() {
     let usuario = prompt("Te damos la bienvenida. ¿Cómo te llamás?")
     const maximoVeces = 5
 
-    if (usuario !== "") {
+    if (usuario == undefined) {
+        alert("¡Volvé pronto!");
+    } else if (usuario !== "") {
         let respuesta = confirm(
             "Hola, " + usuario.trim() + ". ¿Querés conocer nuestros descuentos?"
         )
